@@ -1,12 +1,112 @@
-  GNU nano 7.2                                                             Index.html                                                                       <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple CI/CD Pipeline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6e7f9f, #1d2739);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #f7d04b;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            opacity: 0.8;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            background: #f7d04b;
+            color: #1d2739;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #f1c934;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        footer a {
+            color: #f7d04b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #f1c934;
+        }
+    </style>
 </head>
-<body style="text-align: center; margin-top: 50px;">
-    <h1>🚀 Hello from my CI/CD Pipeline! 🚀</h1>
-    <p>This page is automatically updated from GitHub using Python, Bash, and Cron Jobs!</p>
-    <p>✅ This is a new test line added from GitHub!</p>
+<body>
+    <div class="container">
+        <h1>🚀 Welcome to My CI/CD Pipeline! 🚀</h1>
+        <p>This page is automatically updated through a robust CI/CD pipeline powered by Python, Bash, and Cron Jobs. Stay tuned for live updates from GitHub!</p>
+        <button class="cta-button" onclick="window.location.href='https://github.com/your-repo'">Visit GitHub Repo</button>
+        <footer>
+            <p>Made with ❤️ by <a href="https://your-portfolio.com" target="_blank">Your Name</a></p>
+        </footer>
+    </div>
 </body>
 </html>
